@@ -62,21 +62,51 @@ header nav a:hover{
 
 .filme-principal .descricao{
   margin-bottom: 40px;
+  margin-top: 10px;
 }
 
-.titulo{
-  margin-top: ;
+.filme-principal .titulo{
+  /*posicionamento fluido: utilizando percentuais*/
+  margin-top: 15%;
   font-size: 40px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
+}   
 
 .botao {
   /* efeito de transparencia */
   background-color: rgba(0,0,0,.50);
   border: none;
   color: white;
-
+  /*cima, baixo esquerda direita*/
   padding: 15px 30px;
   margin-right: 15px;
   font-size: 12px;
+
+  cursor: pointer;
+  /*transição entre uma animação e outra. Tempo e tipo*/
+  transition: .3s ease all;
+}
+/*listener onMouseOver*/
+.botao:hover {
+  background-color: white;
+  color: black;
+}
+/*icones F.A*/
+.botao i{
+  margin-right: 8px;
+}
+
+/*css wrapper and containers*/
+.filme-principal .container {
+  width: 70%;
+}
+/*altura e largura da img*/
+.box-filme{
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.carousel-filmes{
+  margin-top: 5px;
 }

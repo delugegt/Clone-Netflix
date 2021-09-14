@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width initial-scale=1.0">
     <link rel="stylesheet" href="./style/main.css">
+
+    <!--responsividade-->
+    <link rel="stylesheet" href="./style/responsive.css">
+    <!--link CSS carousel -->
+    <link rel="stylesheet" href="./style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="./style/owl/owl.theme.default.min.css">
     <title> NETFLIX CLONE</title>
   </head>
   <body>
@@ -28,14 +34,50 @@
         </div>
         <div class="botoes">
           <button role="button" class="botao">
+            <!--pegue o link e jogue dentro de uma div-->
+            <i class="fas fa-play"></i>
             Assistir agora
           </button>
           <button role="button" class="botao">
+            <i class="fas fa-info-circle"></i> 
             Mais informações
         </button>
       </div>
       </div>
     </main>
+    <!--classe carousel-->
+    <div class="carousel-filmes">
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <img class="box-filme" src="img/mini1.jpg" alt="" srcset="">
+        </div>
+        <div class="item">
+          <img class="box-filme" src="img/mini2.jpg" alt="" srcset="">
+        </div>
+        <div class="item">
+          <img class="box-filme" src="img/mini3.jpg" alt="" srcset="">
+        </div>
+        <div class="item">
+          <img class="box-filme" src="img/mini4.jpg" alt="" srcset="">
+        </div>
+        <div class="item">
+          <img class="box-filme" src="img/mini5.jpg" alt="" srcset="">
+        </div>
+        <div class="item">
+          <img class="box-filme" src="img/mini6.jpg" alt="" srcset="">
+        </div>
+      </div>
+    </div>
+
+
+    <!--JS font Awesome-->
+    <script src="https://kit.fontawesome.com/a5467aff91.js" crossorigin="anonymous"></script>
+    <!-- link JS carousel, recomendável devido a ordem sequencial da página executar o JS e poder gerar erro no inicio -->
+    <script src="./js/owl/jquery.min.js"></script>
+    <script src="./js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
+
+    </script>
 
   </body>
 </html>
